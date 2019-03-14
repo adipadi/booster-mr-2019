@@ -24,7 +24,7 @@ New entities will appear in your Hierarchy view:
 
 :information_source: The **Directional Light** is not needed for the HoloLens as it does not use lights. But you can keep it there if you want to. The **MixedRealityToolkit** is the configurations. The **MixedRealityPlayspace** contains the camera configurations, event system and Gaze provider.
 
-Save the new Scene by going to **File -> Save scene as**. Give it a name and save it in the scenes folder. 
+Save the new Scene by going to **File -> Save as**. Give it a name and save it in the scenes folder. 
 
 Click on the **MixedRealityToolkit** in the Hierarchy. The toolkit options will appear in the Inspector. Click on **Copy & customize**.
 
@@ -32,11 +32,13 @@ Click on the **MixedRealityToolkit** in the Hierarchy. The toolkit options will 
 We’ll set this to world as we can take advantage of the spatial mapping capabilities of the HoloLens.
 
 *Camera settings:*  
-Double click on the DefaultMixedRealityCamera. You can check the Is Camera Persist if you want the camera to stay the same across scenes. 
+Double click on the DefaultMixedRealityCamera. You can check the Is Camera Persist if you want the camera to stay the same across scenes. If the options here is disabled, click the <> symbole next to it.
 
-As you can see the Opaque Display Settings is set to Skybox and Ultra quality. This setting is for VR headsets.
+As you can see the **Opaque Display Settings** is set to Skybox and Ultra quality. This setting is for VR headsets, so we wont use them.
 
-The Transparent display settings is set to solid color and black, that way the background will be transparent in the HoloLens. As for quality the hardware in the HoloLens limits the graphics settings so keep it on Very low.
+The **Transparent display settings** is set to solid color and black, that way the background will be transparent in the HoloLens. As for quality the hardware in the HoloLens limits the graphics settings so keep it on Very low. 
+
+Go back to the toolkit options.
 
 As the HoloLens has a transparent display, we don’t have to worry about the *Boundary System settings* so leave that unchecked. 
 
